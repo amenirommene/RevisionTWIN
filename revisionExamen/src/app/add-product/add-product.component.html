@@ -1,0 +1,25 @@
+<h1>Ajouter un produit</h1>
+<form #f="ngForm" (submit)="addProduct()">
+  <div class="form-group">
+    <label for="productName">Product Name:</label>
+    <input type="text" class="form-control" id="productName" name="productName" [(ngModel)]="product.name" #name="ngModel" required>
+    <!-- Error message -->
+    <div class="error-message" *ngIf="name.invalid">Product name is required.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="productPrice">Product Price:</label>
+    <input type="text" class="form-control" id="productPrice" name="productPrice" [(ngModel)]="product.price" pattern="[0-9]+" #price="ngModel">
+    <!-- Error message -->
+    <div class="error-message" *ngIf="price.invalid">Enter a valid price.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="productDescription">Product Description:</label>
+    <textarea class="form-control" id="productDescription" name="productDescription" [(ngModel)]="product.description" minlength="10" #desc="ngModel"></textarea>
+    <!-- Error message -->
+    <div class="error-message" *ngIf="desc.invalid">Description should be at least 10 characters long.</div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="f.invalid">Add Product</button>
+</form>

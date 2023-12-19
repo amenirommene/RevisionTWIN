@@ -1,0 +1,77 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "Sample Product",
+      "price": 19.99,
+      "description": "This is a sample product description."
+    },
+    {
+      "id": 2,
+      "name": "test",
+      "price": 1500,
+      "description": "sqdqsdsqdqsdsqd"
+    },
+    {
+      "id": 3,
+      "name": "test2",
+      "price": 1400,
+      "description": "gggggggggg"
+    },
+    {
+      "name": "dfghjklm",
+      "price": "44444",
+      "description": "sdfghjklmcvbn,;",
+      "id": 4
+    },
+    {
+      "name": "hh",
+      "price": "44",
+      "description": "jjjjjjjjjjjjjjjjjjjj",
+      "id": 5
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Sample Product",
+      "price": 19.99,
+      "description": "This is a sample product description."
+    },
+    {
+      "id": 3,
+      "name": "test2",
+      "price": 1400,
+      "description": "gggggggggg"
+    },
+    {
+      "name": "dfghjklm",
+      "price": "44444",
+      "description": "sdfghjklmcvbn,;",
+      "id": 4
+    },
+    {
+      "id": 2,
+      "name": "test",
+      "price": 1500,
+      "description": "sqdqsdsqdqsdsqd"
+    }
+  ]
+}
